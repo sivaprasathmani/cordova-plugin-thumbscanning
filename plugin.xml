@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-thumbscanning"
+    version="3.0.1"
+    xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>ThumbScanning</name>
+    <js-module name="ThumbScanning" src="www/ThumbScanning.js">
+        <clobbers target="cordova.plugins.ThumbScanning" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="ThumbScanning">
+                <param name="android-package" value="cordova.plugin.thumbscanning.ThumbScanning" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml">
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+        </config-file>
+        <source-file src="src/android/ThumbScanning.java"
+            target-dir="src/cordova.plugin.thumbscanning" />
+        <source-file src="src/android/FingerPrintHelperClass.java"
+            target-dir="src/cordova.plugin.thumbscanning" />
+    </platform>
+</plugin>

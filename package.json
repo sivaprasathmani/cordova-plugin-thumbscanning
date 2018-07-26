@@ -1,0 +1,21 @@
+{
+  "name": "cordova-plugin-thumbscanning",
+  "version": "3.0.1",
+  "description": "Fingerprint Scanning",
+  "cordova": {
+    "id": "cordova-plugin-thumbscanning",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sivapasath"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "sivaprasath",
+  "license": "apache 2.0"
+}
